@@ -1,4 +1,4 @@
-# pokehoum
+# digital-nao-miniproyectos-divertidos
 ***
 
 ## Información
@@ -14,7 +14,7 @@ Mini proyectos Python.
 Comandos recomendados para instalación en plataformas Windows. 
 ```
 > git clone https://github.com/afcarrera/digital-nao-miniproyectos-divertidos
-> cd pokehoum
+> cd digital-nao-miniproyectos-divertidos
 > python -m venv venv
 > venv\Scripts\activate  
 > venv\Scripts\pip install -r requirements.txt
