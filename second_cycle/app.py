@@ -88,7 +88,6 @@ def ussd_options(id_ussd, ussd_data):
         _opt_root = _ussd.root[id_ussd]
         if form.option.data:
             opt_int = int(form.option.data) - 1
-            print(opt_int, _opt_root.childs)   
             if 0 <= opt_int \
                 and ((opt_int< len(_opt_root.childs) - 1 and -1 in _opt_root.childs) or 
                      (opt_int< len(_opt_root.childs) and -1 not in _opt_root.childs)):
@@ -96,7 +95,6 @@ def ussd_options(id_ussd, ussd_data):
                 opt_o = _ussd.root[opt_ch]
                 form.menu.label = ussd_util.get_menu(opt_o, _ussd_actual, _ussd)
                 _ussd_actual = opt_ch
-                print(_ussd_actual)
                 return redirect(url_for('ussd_options', ussd_data=ussd_data, id_ussd=opt_ch))
             elif opt_int == len(_opt_root.childs) - 1 and -1 in _opt_root.childs:
                 form.menu.label = ussd_util.get_menu(_ussd.root[_opt_root.parent], _ussd_actual, _ussd)
@@ -155,7 +153,6 @@ def hanged_game():
         form.hint.label = _word_hint
         form.word.label = space.join(_wl)
         letter = hanged_game_util.get_letter_selected(request)
-        print('LETRA', letter, _goods, len(_word))
         if letter in _word_info and letter not in _letters:
             _letters.add(letter)
             idx_list = _word_info[letter]
