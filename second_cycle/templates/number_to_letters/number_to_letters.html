@@ -1,0 +1,14 @@
+{% block content %}
+    <a href="/">Regresar</a>
+    <div>
+        <h1>Números a letras</h1>
+        <form action="" method="post">
+            {{ form.number.label }}
+            {{ form.number }}
+            {{ form.submit() }}
+            <p>
+                {{ form.letters.label }}
+            </p>
+        </form>
+    </div>
+{% endblock %}

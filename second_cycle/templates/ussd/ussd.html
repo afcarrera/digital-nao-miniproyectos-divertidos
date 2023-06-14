@@ -1,0 +1,11 @@
+{% block content %}
+    <a href="/">Regresar</a>
+    <div>
+        <h1>Menú telefónico USSD</h1>
+        <form action="" method="post">
+            {{ form.ussd }}
+            {{ form.submit() }}
+            <a href="{{ url_for('ussd') }}">Cancelar</a>
+        </form>
+    </div>
+{% endblock %}

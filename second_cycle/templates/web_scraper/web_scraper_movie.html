@@ -1,0 +1,17 @@
+{% block content %}
+    <a href="/web_scraper_page">Regresar</a>
+    <div>
+        <h1>Pequeño web scrape</h1>
+        <form action="" method="post">
+            {{ form.movie.label }}
+            {{ form.movie }}
+            {{ form.submit() }}
+            <h2>
+                {{ form.title.label }}
+            </h2>
+            <p>
+                {{ form.transcript.label }}
+            </p>
+        </form>
+    </div>
+{% endblock %}

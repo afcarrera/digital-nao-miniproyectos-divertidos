@@ -1,0 +1,17 @@
+{% block content %}
+    <a href="/">Regresar</a>
+    <div>
+        <h1>Rating de películas</h1>
+        <form action="" method="post">
+            {{ form.movies.label }}
+            {{ form.movies }}
+            {{ form.users.label }}
+            {{ form.users }}
+            {{ form.ratings.label }}
+            {{ form.ratings }}
+            {{ form.submit() }}
+            <br>
+            {{ form.movies_list(rows=10, cols=100, disabled=True) }}
+        </form>
+    </div>
+{% endblock %}
