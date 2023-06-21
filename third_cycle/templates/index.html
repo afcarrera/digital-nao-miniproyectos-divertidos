@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Paint en Canvas JS</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			canvas{
+				display: block;
+				margin: auto;
+			}
+		</style>	
+		<link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"> 	
+		<script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+	</head>
+	<body>
+		<input type="button" name="" value="Borrador" onclick="tool='borrador'">
+		<input type="button" name="" value="Lapiz" onclick="tool='lapiz'">
+	</body>
+</html>
