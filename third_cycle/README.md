@@ -3,7 +3,7 @@
 
 ## Información
 ***
-Mini proyectos Python.
+Mini proyectos Python + JS.
 ## Tecnologías
 ***
 * [Python](https://www.python.org/downloads/release/python-390/): Version 3.9.0
