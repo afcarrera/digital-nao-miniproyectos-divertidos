@@ -15,6 +15,7 @@ Comandos recomendados para instalación en plataformas Windows.
 ```
 > git clone https://github.com/afcarrera/digital-nao-miniproyectos-divertidos
 > cd digital-nao-miniproyectos-divertidos
+> cd third_cycle
 > python -m venv venv
 > venv\Scripts\activate  
 > venv\Scripts\pip install -r requirements.txt
